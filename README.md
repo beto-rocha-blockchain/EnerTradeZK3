@@ -18,8 +18,8 @@ Democratizar o acesso ao mercado de energia, promovendo inclusão e segurança:
 ## 🪙 Token
 
 - **Nome:** EnerZ
-- **Lastro:** 1 Tron = 1 kWh
-- **Blockchain:** Ethereum (Testnet Sepolia) e NEAR
+- **Lastro:** 1 EnerZ = 1 kWh
+- **Blockchain:** Ethereum (Testnet Sepolia)
 - **Privacidade:** Implementada com Circom + SnarkJS
 
 ---
@@ -28,10 +28,9 @@ Democratizar o acesso ao mercado de energia, promovendo inclusão e segurança:
 
 | Camada              | Tecnologia                            |
 |---------------------|----------------------------------------|
-| Blockchain          | Ethereum Sepolia + NEAR                |
+| Blockchain          | Ethereum Sepolia                       |
 | Contratos           | Solidity com Hardhat                   |
 | Backend             | Node.js + Express + SnarkJS            |
-| Frontend            | React + Ethers.js                      |
 | ZK-Proofs           | Circom + SnarkJS                       |
 | RPC Provider        | Infura                                 |
 | Provedor de Carteira| MetaMask                               |
@@ -42,14 +41,14 @@ Democratizar o acesso ao mercado de energia, promovendo inclusão e segurança:
 
 ```bash
 EnerTradeZK/
-├── backend/               # Servidor Express com integração ZK
-│   └── zk/                # Provas: circuitos, configuração e geração
-├── frontend/              # Interface React conectada à blockchain
-│   └── src/
-├── smart-contract/        # Contratos inteligentes e scripts (Hardhat)
-│   ├── contracts/
-│   ├── scripts/
-│   ├── test/
-│   ├── hardhat.config.js
-│   └── .env
-└── README.md              # Documentação principal do projeto
+├── assets/              # Recursos estáticos (imagens, ícones, etc.)
+├── node_modules/        # Dependências do projeto
+├── smart-contract/      # Contratos inteligentes em Solidity
+├── .gitattributes
+├── LICENSE              # Licença MIT
+├── README.md            # Documentação do projeto
+├── package-lock.json
+└── package.json         # Gerenciamento de dependências
+```
+
+Licença: O projeto está licenciado sob a Licença MIT, permitindo uso, modificação e distribuição.
