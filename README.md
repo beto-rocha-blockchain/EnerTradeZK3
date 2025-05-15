@@ -17,7 +17,7 @@ Democratizar o acesso ao mercado de energia, promovendo inclusão e segurança:
 
 ## 🪙 Token
 
-- **Nome:** Tron (exemplo)
+- **Nome:** EnerZ
 - **Lastro:** 1 Tron = 1 kWh
 - **Blockchain:** Ethereum (Testnet Sepolia) e NEAR
 - **Privacidade:** Implementada com Circom + SnarkJS
@@ -53,5 +53,3 @@ EnerTradeZK/
 │   ├── hardhat.config.js
 │   └── .env
 └── README.md              # Documentação principal do projeto
-
-
