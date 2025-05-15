@@ -2,7 +2,7 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\dev\\EnerTradeZK3\\contracts\\EnerZ.sol": {
-      "lastModificationDate": 1747257770543,
+      "lastModificationDate": 1747253507639,
       "contentHash": "2dd588308f5914b0220af5ad0e6271ca",
       "sourceName": "contracts/EnerZ.sol",
       "solcConfig": {
@@ -40,8 +40,8 @@
       ]
     },
     "C:\\dev\\EnerTradeZK3\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
-      "lastModificationDate": 1747257771606,
-      "contentHash": "aa07ccaeadfe79f7ad36238bd1f507e4",
+      "lastModificationDate": 1747304801099,
+      "contentHash": "3ae5166c6827a9cf1a7a462d1632b464",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -70,19 +70,18 @@
       "imports": [
         "./IERC20.sol",
         "./extensions/IERC20Metadata.sol",
-        "../../utils/Context.sol",
-        "../../interfaces/draft-IERC6093.sol"
+        "../../utils/Context.sol"
       ],
       "versionPragmas": [
-        "^0.8.20"
+        "^0.8.0"
       ],
       "artifacts": [
         "ERC20"
       ]
     },
     "C:\\dev\\EnerTradeZK3\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
-      "lastModificationDate": 1747257771606,
-      "contentHash": "2783b901218e982baedae531a748ed8d",
+      "lastModificationDate": 1747304800960,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -110,53 +109,15 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.20"
+        "^0.8.0"
       ],
       "artifacts": [
         "Context"
       ]
     },
-    "C:\\dev\\EnerTradeZK3\\node_modules\\@openzeppelin\\contracts\\interfaces\\draft-IERC6093.sol": {
-      "lastModificationDate": 1747257771590,
-      "contentHash": "1d1602f392ece4ad9d8619d8330cf62a",
-      "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
-      "solcConfig": {
-        "version": "0.8.28",
-        "settings": {
-          "evmVersion": "paris",
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "IERC1155Errors",
-        "IERC20Errors",
-        "IERC721Errors"
-      ]
-    },
     "C:\\dev\\EnerTradeZK3\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
-      "lastModificationDate": 1747257771606,
-      "contentHash": "778af47480c13b77b1966a07ff4b6bd6",
+      "lastModificationDate": 1747304801400,
+      "contentHash": "df36f7051335cd1e748b1b6463b7fdd3",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -184,15 +145,15 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.20"
+        "^0.8.0"
       ],
       "artifacts": [
         "IERC20"
       ]
     },
     "C:\\dev\\EnerTradeZK3\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol": {
-      "lastModificationDate": 1747257771606,
-      "contentHash": "f2b8a04309de70068525c84e8ff0de09",
+      "lastModificationDate": 1747304801403,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -222,15 +183,15 @@
         "../IERC20.sol"
       ],
       "versionPragmas": [
-        "^0.8.20"
+        "^0.8.0"
       ],
       "artifacts": [
         "IERC20Metadata"
       ]
     },
     "C:\\dev\\EnerTradeZK3\\contracts\\Exchange.sol": {
-      "lastModificationDate": 1747258043488,
-      "contentHash": "44885d31c11eb45b13e3981ce404ba22",
+      "lastModificationDate": 1747313172919,
+      "contentHash": "b6e4b73e7d8735ec11485d22f92a2a67",
       "sourceName": "contracts/Exchange.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -257,7 +218,9 @@
         }
       },
       "imports": [
-        "./EnerZ.sol"
+        "./EnerZ.sol",
+        "./Groth16Verifier.sol",
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol"
       ],
       "versionPragmas": [
         "^0.8.20"
@@ -266,10 +229,10 @@
         "Exchange"
       ]
     },
-    "C:\\dev\\EnerTradeZK3\\contracts\\Lock.sol": {
-      "lastModificationDate": 1747257770543,
-      "contentHash": "642fa52ab63153524e2438211810ea7e",
-      "sourceName": "contracts/Lock.sol",
+    "C:\\dev\\EnerTradeZK3\\contracts\\Groth16Verifier.sol": {
+      "lastModificationDate": 1747312300821,
+      "contentHash": "9fbc83b257595ff5a7f83d3a7b3466f6",
+      "sourceName": "contracts/Groth16Verifier.sol",
       "solcConfig": {
         "version": "0.8.28",
         "settings": {
@@ -296,10 +259,46 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.28"
+        ">=0.7.0 <0.9.0"
       ],
       "artifacts": [
-        "Lock"
+        "Groth16Verifier"
+      ]
+    },
+    "C:\\dev\\EnerTradeZK3\\node_modules\\@openzeppelin\\contracts\\security\\ReentrancyGuard.sol": {
+      "lastModificationDate": 1747304801578,
+      "contentHash": "1535f8c0c68463f8c1b5239f7584e71f",
+      "sourceName": "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
       ]
     }
   }
