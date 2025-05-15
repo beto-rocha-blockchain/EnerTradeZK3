@@ -18,7 +18,7 @@ Democratizar o acesso ao mercado de energia, promovendo inclusão e segurança:
 ## 🪙 Token
 
 - **Nome:** EnerZ
-- **Lastro:** 1 EnerZ = 1 kWh
+- **Lastro:** 1 EnerZ = 1 MWh
 - **Blockchain:** Ethereum (Testnet Sepolia)
 - **Privacidade:** Implementada com Circom + SnarkJS
 
