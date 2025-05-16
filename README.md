@@ -30,7 +30,7 @@ Democratizar o acesso ao mercado de energia, promovendo inclusão e segurança:
 |---------------------|----------------------------------------|
 | Blockchain          | Ethereum Sepolia                       |
 | Contratos           | Solidity com Hardhat                   |
-| Backend             | Node.js + Express + SnarkJS            |
+| Backend             | Node.js                                |
 | ZK-Proofs           | Circom + SnarkJS                       |
 | RPC Provider        | Infura                                 |
 | Provedor de Carteira| MetaMask                               |
