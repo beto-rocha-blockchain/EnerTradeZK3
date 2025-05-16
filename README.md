@@ -62,8 +62,93 @@ EnerTradeZK/
 
 ---
 
-## Construa a energia do futuro. Descentralize, proteja, compartilhe.
+## 🛠️ Como rodar o projeto localmente
+
+✅ Pré-requisitos
+
+Certifique-se de ter os seguintes softwares instalados:
+
+Node.js
+```bash
+nvm install --lts
+```
+
+nvm Linux
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+nvm Windows
+```bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+Git
+
+Baixe aqui:
+👉 https://git-scm.com/download/win
+
+Siga as orientações padrão na instalção.
+
+Docker (caso vá usar contêiner para serviços auxiliares)
+
+Baixe aqui:
+👉 https://www.docker.com/products/docker-desktop/
+
+Requisitos:
+
+Windows 10/11 64-bit
+
+WSL 2 ativado (a instalação do Docker Desktop ajuda nisso)
+
+Após instalar, reinicie e verifique:
+
+```bash
+docker --version
+```
+
+# 📦 Instalação
+Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/beto-rocha-blockchain/EnerTradeZK.git
+cd EnerTradeZK
+npm install
+```
+
+# 🧪 Rodando os testes
+
+Execute todos os testes com:
+
+```bash
+npx hardhat test
+```
+
+Ou indique algum teste específico:
+
+```bash
+# Exemplo já incluso no repositório
+npx hardhat test test/ExchangeProof.test.js
+```
+
+# 🚀 Rodando localmente
+
+Para iniciar um nó local do Hardhat:
+
+```bash
+npx hardhat node
+```
+
+Para implantar os contratos no nó local:
+
+```bash
+npx hardhat run scripts/deploy.ts --network localhost
+```
 
 ---
 
-Licença: O projeto está licenciado sob a Licença MIT, permitindo uso, modificação e distribuição.
+## ⚡ Construa a energia do futuro. Descentralize, proteja, compartilhe!
+
+---
+
+Licença: O projeto está licenciado sob a Licença MIT, permitindo uso, modificação e distribuição. Para mais informações acesse o arquivo LICENSE do repositório.
