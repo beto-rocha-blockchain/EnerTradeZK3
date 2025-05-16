@@ -118,15 +118,16 @@ npm install
 
 # 🧪 Rodando os testes
 
-Execute os testes com:
+Execute todos os testes com:
 
 ```bash
 npx hardhat test
 ```
 
-Ou indique o teste já criado no repositório:
+Ou indique algum teste específico:
 
 ```bash
+# Exemplo já incluso no repositório
 npx hardhat test test/ExchangeProof.test.js
 ```
 
