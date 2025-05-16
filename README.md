@@ -107,7 +107,7 @@ Após instalar, reinicie e verifique:
 docker --version
 ```
 
-# 📦 Instalação
+## 📦 Instalação
 Clone o repositório e instale as dependências:
 
 ```bash
@@ -116,7 +116,7 @@ cd EnerTradeZK
 npm install
 ```
 
-# 🧪 Rodando os testes
+## 🧪 Rodando os testes
 
 Execute todos os testes com:
 
@@ -131,7 +131,7 @@ Ou indique algum teste específico:
 npx hardhat test test/ExchangeProof.test.js
 ```
 
-# 🚀 Rodando localmente
+## 🚀 Rodando localmente
 
 Para iniciar um nó local do Hardhat:
 
