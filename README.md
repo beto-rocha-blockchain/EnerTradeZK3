@@ -62,8 +62,120 @@ EnerTradeZK/
 
 ---
 
-## Construa a energia do futuro. Descentralize, proteja, compartilhe.
+## 🛠️ Como rodar o projeto localmente
+
+✅ Pré-requisitos
+
+Certifique-se de ter os seguintes softwares instalados:
+
+Node.js
+```bash
+nvm install --lts
+```
+
+nvm Linux
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+nvm Windows
+```bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+Git
+
+Baixe aqui:
+👉 https://git-scm.com/download/win
+
+Siga as orientações padrão na instalção.
+
+Docker (caso vá usar contêiner para serviços auxiliares)
+
+Baixe aqui:
+👉 https://www.docker.com/products/docker-desktop/
+
+Requisitos:
+
+Windows 10/11 64-bit
+
+WSL 2 ativado (a instalação do Docker Desktop ajuda nisso)
+
+Após instalar, reinicie e verifique:
+
+```bash
+docker --version
+```
+
+# 📦 Instalação
+Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/beto-rocha-blockchain/EnerTradeZK.git
+cd EnerTradeZK
+npm install
+```
+
+# 🧪 Rodando os testes
+
+Execute os testes com:
+
+```bash
+npx hardhat test
+```
+
+Ou indique o teste já criado no repositório:
+
+```bash
+npx hardhat test test/ExchangeProof.test.js
+```
+
+# 📜 Gerando provas ZK com snarkjs
+
+Para gerar uma prova de saldo, vá para o diretório ZK:
+
+```bash
+cd zk
+```
+
+E siga os passos (exemplo simplificado):
+
+```bash
+# 1. Compilar o circuito
+circom saldo.circom --r1cs --wasm --sym
+
+# 2. Configurar trusted setup (Powers of Tau)
+snarkjs powersoftau new bn128 12 pot12_0000.ptau -v
+snarkjs powersoftau contribute pot12_0000.ptau pot12_final.ptau --name="First contribution"
+
+# 3. Gerar proving/verifying keys
+snarkjs groth16 setup saldo.r1cs pot12_final.ptau saldo_0000.zkey
+
+# 4. Gerar a prova
+snarkjs groth16 prove saldo_0000.zkey input.json proof.json public.json
+
+# 5. Verificar a prova
+snarkjs groth16 verify verification_key.json public.json proof.json
+```
+
+# 🚀 Rodando localmente
+
+Para iniciar um nó local do Hardhat:
+
+```bash
+npx hardhat node
+```
+
+Para implantar os contratos no nó local:
+
+```bash
+npx hardhat run scripts/deploy.ts --network localhost
+```
 
 ---
 
-Licença: O projeto está licenciado sob a Licença MIT, permitindo uso, modificação e distribuição.
+## Construa a energia do futuro. Descentralize, proteja, compartilhe!
+
+---
+
+Licença: O projeto está licenciado sob a Licença MIT, permitindo uso, modificação e distribuição. Para mais informações acesse o arquivo LICENSE do repositório.
