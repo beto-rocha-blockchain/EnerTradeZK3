@@ -131,34 +131,6 @@ Ou indique algum teste específico:
 npx hardhat test test/ExchangeProof.test.js
 ```
 
-# 📜 Gerando provas ZK com snarkjs
-
-Para gerar uma prova de saldo, vá para o diretório ZK:
-
-```bash
-cd zk
-```
-
-E siga os passos (exemplo simplificado):
-
-```bash
-# 1. Compilar o circuito
-circom saldo.circom --r1cs --wasm --sym
-
-# 2. Configurar trusted setup (Powers of Tau)
-snarkjs powersoftau new bn128 12 pot12_0000.ptau -v
-snarkjs powersoftau contribute pot12_0000.ptau pot12_final.ptau --name="First contribution"
-
-# 3. Gerar proving/verifying keys
-snarkjs groth16 setup saldo.r1cs pot12_final.ptau saldo_0000.zkey
-
-# 4. Gerar a prova
-snarkjs groth16 prove saldo_0000.zkey input.json proof.json public.json
-
-# 5. Verificar a prova
-snarkjs groth16 verify verification_key.json public.json proof.json
-```
-
 # 🚀 Rodando localmente
 
 Para iniciar um nó local do Hardhat:
