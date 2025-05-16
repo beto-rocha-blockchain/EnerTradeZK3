@@ -147,7 +147,7 @@ npx hardhat run scripts/deploy.ts --network localhost
 
 ---
 
-## Construa a energia do futuro. Descentralize, proteja, compartilhe!
+## ⚡ Construa a energia do futuro. Descentralize, proteja, compartilhe!
 
 ---
 
