@@ -68,11 +68,6 @@ EnerTradeZK/
 
 Certifique-se de ter os seguintes softwares instalados:
 
-Node.js
-```bash
-nvm install --lts
-```
-
 nvm Linux
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
@@ -81,6 +76,11 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 nvm Windows
 ```bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+Node.js
+```bash
+nvm install --lts
 ```
 
 Git
