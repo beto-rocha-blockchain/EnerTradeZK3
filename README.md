@@ -68,44 +68,51 @@ EnerTradeZK/
 
 Certifique-se de ter os seguintes softwares instalados:
 
-nvm Linux
+
+## nvm Linux
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
 
-nvm Windows
+
+## nvm Windows
 ```bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
 
-Node.js
+
+## Node.js
 ```bash
 nvm install --lts
 ```
 
-Git
 
-Baixe aqui:
-👉 https://git-scm.com/download/win
+## Git
+
+
+Baixe aqui: 👉 https://git-scm.com/download/win
 
 Siga as orientações padrão na instalção.
 
-Docker (caso vá usar contêiner para serviços auxiliares)
 
-Baixe aqui:
-👉 https://www.docker.com/products/docker-desktop/
+## Docker (caso vá usar contêiner para serviços auxiliares)
+
+Baixe aqui: 👉 https://www.docker.com/products/docker-desktop/
 
 Requisitos:
 
 Windows 10/11 64-bit
 
-WSL 2 ativado (a instalação do Docker Desktop ajuda nisso)
+
+
+## WSL 2 ativado (a instalação do Docker Desktop ajuda nisso)
 
 Após instalar, reinicie e verifique:
 
 ```bash
 docker --version
 ```
+
 
 ## 📦 Instalação
 Clone o repositório e instale as dependências:
@@ -116,6 +123,7 @@ cd EnerTradeZK
 npm install
 ```
 
+
 ## 🧪 Rodando os testes
 
 Execute todos os testes com:
@@ -124,12 +132,14 @@ Execute todos os testes com:
 npx hardhat test
 ```
 
+
 Ou indique algum teste específico:
 
 ```bash
 # Exemplo já incluso no repositório
 npx hardhat test test/ExchangeProof.test.js
 ```
+
 
 ## 🚀 Rodando localmente
 
