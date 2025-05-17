@@ -95,7 +95,7 @@ Baixe aqui: 👉 https://git-scm.com/download/win
 Siga as orientações padrão na instalção.
 
 
-## Docker (caso vá usar contêiner para serviços auxiliares)
+## Docker (Opcional, caso vá usar contêiner para serviços auxiliares)
 
 Baixe aqui: 👉 https://www.docker.com/products/docker-desktop/
 
